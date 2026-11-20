@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CHANGEGUARD 🛡️
 ### Predictive IT Change Risk & Blast-Radius Platform for Banking Systems
 
@@ -896,3 +897,7 @@ GitHub signature verification uses `X-Hub-Signature-256` (HMAC-SHA256). Non-`pul
 ### Current integration boundary
 
 This integration assesses and comments on Pull Requests. It does not approve, block, merge, or deploy changes. GitHub delivery retries can create another assessment record in this initial version; durable webhook-delivery deduplication should be added before using it for a team-wide production workflow.
+=======
+# CGX
+CGX is a locally hosted change intelligence platform that analyzes software changes, service dependencies, blast radius, and deployment risks using machine learning. It integrates real application data to predict potential failures, track incidents, and provide actionable recommendations before deployment.
+>>>>>>> 8140bf1a5093029a6058fc1ab29c14b2a64838a3
