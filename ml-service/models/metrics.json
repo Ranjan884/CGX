@@ -1,0 +1,33 @@
+{
+  "dataset_size": 1200,
+  "train_size": 960,
+  "test_size": 240,
+  "logistic_regression": {
+    "model": "LogisticRegression",
+    "accuracy": 0.8625,
+    "precision": 0.6374,
+    "recall": 1.0,
+    "f1": 0.7785,
+    "roc_auc": 0.892,
+    "confusion_matrix": {
+      "tn": 149,
+      "fp": 33,
+      "fn": 0,
+      "tp": 58
+    }
+  },
+  "random_forest": {
+    "model": "RandomForest",
+    "accuracy": 0.9075,
+    "precision": 0.6894,
+    "recall": 1.0,
+    "f1": 0.8161,
+    "roc_auc": 0.934,
+    "confusion_matrix": {
+      "tn": 155,
+      "fp": 27,
+      "fn": 0,
+      "tp": 58
+    }
+  }
+}

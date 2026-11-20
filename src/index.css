@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --bg: #0B0F17;
+  --sidebar: #0F1420;
+  --surface: #121927;
+  --surface-hover: #161F30;
+  --surface-2: #171F30;
+  --border: #263148;
+  --text: #F5F7FA;
+  --text-secondary: #CBD5E1;
+  --muted: #94A3B8;
+  --primary: #4F7CFF;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+  --success: #22C55E;
+
+  /* Backwards-compatibility aliases */
+  --bg-base: #0B0F17;
+  --bg-surface: #121927;
+  --bg-panel: #121927;
+  --bg-panel-elevated: #171F30;
+  --border-subtle: #263148;
+  --border-highlight: #4F7CFF;
+  --text-primary: #F5F7FA;
+  --text-muted: #94A3B8;
+  --accent-primary: #4F7CFF;
+  --accent-glow: rgba(79, 124, 255, 0.15);
+}
+
+body {
+  background-color: #0B0F17;
+  color: #F5F7FA;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+}
+
+code, pre, kbd, samp, .font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Tabular numerals for data tables, metrics, and identifiers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Precision motion curves */
+:root {
+  --ease-enterprise: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 220ms;
+  --duration-drawer: 240ms;
+}
+
+/* Respect user's reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom crisp dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263148;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #364464;
+}
+
+/* React Flow canvas styling for enterprise dark mode */
+.react-flow__background {
+  background-color: #0B0F17 !important;
+}
+
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid #263148 !important;
+  background: #121927 !important;
+  border-radius: 8px !important;
+}
+
+.react-flow__controls-button {
+  background: #121927 !important;
+  border-bottom: 1px solid #263148 !important;
+  fill: #CBD5E1 !important;
+  color: #CBD5E1 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #171F30 !important;
+  fill: #F5F7FA !important;
+  color: #F5F7FA !important;
+}

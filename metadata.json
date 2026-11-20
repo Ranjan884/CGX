@@ -1,0 +1,6 @@
+{
+  "name": "ChangeGuard - Predictive IT Change Risk & Blast-Radius Platform",
+  "description": "Predictive IT Change Risk and Blast-Radius Platform for Banking Systems. Analyzes proposed technical changes, simulates dependencies, calculates failure probability, and provides deployment decision support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

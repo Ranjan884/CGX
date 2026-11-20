@@ -1,0 +1,141 @@
+{
+  "dataset_metadata": {
+    "total_samples": 2000,
+    "train_samples": 1600,
+    "test_samples": 400,
+    "incident_rate_overall": 0.6565,
+    "random_seed": 42
+  },
+  "selected_model": "Random Forest",
+  "selection_reason": "Random Forest selected with composite score 0.8636 vs 0.8540 (F1: 0.8587, ROC-AUC: 0.8441, Recall: 0.8897). Offers superior nonlinear decision boundaries for cross-feature interaction.",
+  "models": {
+    "logistic_regression": {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.8025,
+      "precision": 0.8407,
+      "recall": 0.8631,
+      "f1": 0.8518,
+      "roc_auc": 0.8477,
+      "confusion_matrix": {
+        "true_negatives": 94,
+        "false_positives": 43,
+        "false_negatives": 36,
+        "true_positives": 227
+      }
+    },
+    "random_forest": {
+      "model_name": "Random Forest",
+      "accuracy": 0.8075,
+      "precision": 0.8298,
+      "recall": 0.8897,
+      "f1": 0.8587,
+      "roc_auc": 0.8441,
+      "confusion_matrix": {
+        "true_negatives": 89,
+        "false_positives": 48,
+        "false_negatives": 29,
+        "true_positives": 234
+      }
+    }
+  },
+  "feature_importances_random_forest": [
+    {
+      "feature": "blast_radius_score",
+      "importance": 0.2196
+    },
+    {
+      "feature": "critical_services_affected",
+      "importance": 0.1657
+    },
+    {
+      "feature": "dependency_count",
+      "importance": 0.1312
+    },
+    {
+      "feature": "change_complexity",
+      "importance": 0.0932
+    },
+    {
+      "feature": "criticality_score",
+      "importance": 0.0766
+    },
+    {
+      "feature": "dependency_depth",
+      "importance": 0.0636
+    },
+    {
+      "feature": "service_age",
+      "importance": 0.0624
+    },
+    {
+      "feature": "historical_failure_rate",
+      "importance": 0.0601
+    },
+    {
+      "feature": "version_change_size",
+      "importance": 0.0564
+    },
+    {
+      "feature": "previous_incidents",
+      "importance": 0.0268
+    },
+    {
+      "feature": "change_type_CONFIG_CHANGE",
+      "importance": 0.0079
+    },
+    {
+      "feature": "change_type_INFRASTRUCTURE_CHANGE",
+      "importance": 0.0076
+    }
+  ],
+  "logistic_regression_coefficients": [
+    {
+      "feature": "change_complexity",
+      "coefficient": 0.4405
+    },
+    {
+      "feature": "change_type_INFRASTRUCTURE_CHANGE",
+      "coefficient": 0.3976
+    },
+    {
+      "feature": "critical_services_affected",
+      "coefficient": 0.382
+    },
+    {
+      "feature": "blast_radius_score",
+      "coefficient": 0.3681
+    },
+    {
+      "feature": "dependency_depth",
+      "coefficient": 0.3238
+    },
+    {
+      "feature": "change_type_DATABASE_CHANGE",
+      "coefficient": 0.2899
+    },
+    {
+      "feature": "previous_incidents",
+      "coefficient": 0.2794
+    },
+    {
+      "feature": "change_type_SECURITY_CHANGE",
+      "coefficient": -0.2618
+    },
+    {
+      "feature": "change_type_CONFIG_CHANGE",
+      "coefficient": -0.2471
+    },
+    {
+      "feature": "criticality_score",
+      "coefficient": 0.233
+    },
+    {
+      "feature": "service_age",
+      "coefficient": -0.2022
+    },
+    {
+      "feature": "historical_failure_rate",
+      "coefficient": 0.1839
+    }
+  ]
+}
